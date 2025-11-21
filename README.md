@@ -53,7 +53,7 @@ VALUES<br>
 3. Chạy lệnh khởi động Server: dotnet run
 4. Kết quả thành công:
     1. Sau khi chạy thàng công, sẽ tìm thấy có dòng này xuất hiện trên Terminal hoặc Command Prompts: http://localhost:xxxx.<br>
-    *** (xxxx là số cổng (port number) mà ứng dụng .NET dùng để lắng nghe request) ***
+    ***(xxxx là số cổng (port number) mà ứng dụng .NET dùng để lắng nghe request)***
 
 ## BƯỚC 3: Cấu hình biến môi trường:
 1. Mở file .env.local. trong thư mục task-client
