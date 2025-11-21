@@ -42,7 +42,7 @@ VALUES<br>
 ('Sửa lỗi đăng nhập trên backend', 1, '2025-11-26 12:00:00.000000', NOW(6)),<br>
 ('Tối ưu hóa API lấy dữ liệu', 0, '2025-11-30 09:00:00.000000', NOW(6)),<br>
 ('Viết tài liệu hướng dẫn người dùng', 0, '2025-12-05 23:59:59.000000', NOW(6)),<br>
-('Kiểm thử lại chức năng upload file', 1, '2025-11-27 17:00:00.000000', NOW(6));<br>
+('Kiểm thử lại chức năng upload file', 1, '2025-11-27 17:00:00.000000', NOW(6));<br><br>
 ***(Có thể sử dụng file taskdb.sql được gửi kèm để tạo database)***
 
 ## BƯỚC 2: Chạy Backend (.NET API)
