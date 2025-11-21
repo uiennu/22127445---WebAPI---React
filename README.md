@@ -27,11 +27,12 @@ Trước khi chạy, đảm bảo máy tính đã cài đặt:
 CREATE DATABASE IF NOT EXISTS taskdb;<br>
 USE taskdb;<br>
 CREATE TABLE IF NOT EXISTS Tasks (<br>
-Id INT AUTO_INCREMENT PRIMARY KEY,<br>
-Title VARCHAR(200) CHARACTER SET utf8mb4 NOT NULL,<br>
-Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành<br>
-DueDate DATETIME(6) NOT NULL,<br>
-CreatedAt DATETIME(6) NOT NULL);<br>
+&nbsp;Id INT AUTO_INCREMENT PRIMARY KEY,<br>
+&nbsp;Title VARCHAR(200) CHARACTER SET utf8mb4 NOT NULL,<br>
+&nbsp;Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành<br>
+&nbsp;DueDate DATETIME(6) NOT NULL,<br>
+&nbsp;CreatedAt DATETIME(6) NOT NULL<br>
+);
 
 4. Tạo dữ liệu mẫu.<br>
 INSERT INTO Tasks (Title, Status, DueDate, CreatedAt)<br>
