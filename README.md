@@ -24,17 +24,15 @@ Trước khi chạy, đảm bảo máy tính đã cài đặt:
 1. Mở MySQL Workbench.
 2. Đăng nhập vào Local instance.
 3. Mở một tab Query mới và chạy đoạn lệnh SQL sau để tạo Database và Bảng:
-    - CREATE DATABASE IF NOT EXISTS taskdb;
-
-   -  USE taskdb;
-
-    - CREATE TABLE IF NOT EXISTS Tasks (
-        - Id INT AUTO_INCREMENT PRIMARY KEY,
-        - Title VARCHAR(200) CHARACTER SET utf8mb4 NOT NULL,
-        - Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành
-        - DueDate DATETIME(6) NOT NULL,
-        - CreatedAt DATETIME(6) NOT NULL
-    );
+CREATE DATABASE IF NOT EXISTS taskdb;<br>
+USE taskdb;<br>
+CREATE TABLE IF NOT EXISTS Tasks (<br>
+Id INT AUTO_INCREMENT PRIMARY KEY,<br>
+Title VARCHAR(200) CHARACTER SET utf8mb4 NOT NULL,<br>
+Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành<br>
+DueDate DATETIME(6) NOT NULL,<br>
+CreatedAt DATETIME(6) NOT NULL<br>
+);
 
 4. Tạo dữ liệu mẫu.
     - INSERT INTO Tasks (Title, Status, DueDate, CreatedAt)

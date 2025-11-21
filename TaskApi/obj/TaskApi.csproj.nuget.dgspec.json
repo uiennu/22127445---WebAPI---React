@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\HTTTHĐ\\22127445_API\\TaskApi\\TaskApi.csproj": {}
+    "C:\\Users\\FPT136\\Documents\\GitHub\\22127445---WebAPI---React\\TaskApi\\TaskApi.csproj": {}
   },
   "projects": {
-    "E:\\HTTTHĐ\\22127445_API\\TaskApi\\TaskApi.csproj": {
+    "C:\\Users\\FPT136\\Documents\\GitHub\\22127445---WebAPI---React\\TaskApi\\TaskApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\HTTTHĐ\\22127445_API\\TaskApi\\TaskApi.csproj",
+        "projectUniqueName": "C:\\Users\\FPT136\\Documents\\GitHub\\22127445---WebAPI---React\\TaskApi\\TaskApi.csproj",
         "projectName": "TaskApi",
-        "projectPath": "E:\\HTTTHĐ\\22127445_API\\TaskApi\\TaskApi.csproj",
+        "projectPath": "C:\\Users\\FPT136\\Documents\\GitHub\\22127445---WebAPI---React\\TaskApi\\TaskApi.csproj",
         "packagesPath": "C:\\Users\\FPT136\\.nuget\\packages\\",
-        "outputPath": "E:\\HTTTHĐ\\22127445_API\\TaskApi\\obj\\",
+        "outputPath": "C:\\Users\\FPT136\\Documents\\GitHub\\22127445---WebAPI---React\\TaskApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FPT136\\AppData\\Roaming\\NuGet\\NuGet.Config"
