@@ -24,26 +24,26 @@ Trước khi chạy, đảm bảo máy tính đã cài đặt:
 1. Mở MySQL Workbench.
 2. Đăng nhập vào Local instance.
 3. Mở một tab Query mới và chạy đoạn lệnh SQL sau để tạo Database và Bảng:
-    CREATE DATABASE IF NOT EXISTS taskdb;
+    - CREATE DATABASE IF NOT EXISTS taskdb;
 
-    USE taskdb;
+   -  USE taskdb;
 
-    CREATE TABLE IF NOT EXISTS Tasks (
-        Id INT AUTO_INCREMENT PRIMARY KEY,
-        Title VARCHAR(200) CHARACTER SET utf8mb4 NOT NULL,
-        Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành
-        DueDate DATETIME(6) NOT NULL,
-        CreatedAt DATETIME(6) NOT NULL
+    - CREATE TABLE IF NOT EXISTS Tasks (
+        - Id INT AUTO_INCREMENT PRIMARY KEY,
+        - Title VARCHAR(200) CHARACTER SET utf8mb4 NOT NULL,
+        - Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành
+        - DueDate DATETIME(6) NOT NULL,
+        - CreatedAt DATETIME(6) NOT NULL
     );
 
 4. Tạo dữ liệu mẫu.
-    INSERT INTO Tasks (Title, Status, DueDate, CreatedAt)
-    VALUES
-    ('Hoàn thiện giao diện trang chủ', 0, '2025-11-25 18:00:00.000000', NOW(6)),
-    ('Sửa lỗi đăng nhập trên backend', 1, '2025-11-26 12:00:00.000000', NOW(6)),
-    ('Tối ưu hóa API lấy dữ liệu', 0, '2025-11-30 09:00:00.000000', NOW(6)),
-    ('Viết tài liệu hướng dẫn người dùng', 0, '2025-12-05 23:59:59.000000', NOW(6)),
-    ('Kiểm thử lại chức năng upload file', 1, '2025-11-27 17:00:00.000000', NOW(6));
+    - INSERT INTO Tasks (Title, Status, DueDate, CreatedAt)
+    - VALUES
+    - ('Hoàn thiện giao diện trang chủ', 0, '2025-11-25 18:00:00.000000', NOW(6)),
+    - ('Sửa lỗi đăng nhập trên backend', 1, '2025-11-26 12:00:00.000000', NOW(6)),
+    - ('Tối ưu hóa API lấy dữ liệu', 0, '2025-11-30 09:00:00.000000', NOW(6)),
+    - ('Viết tài liệu hướng dẫn người dùng', 0, '2025-12-05 23:59:59.000000', NOW(6)),
+    - ('Kiểm thử lại chức năng upload file', 1, '2025-11-27 17:00:00.000000', NOW(6));
 
 ## BƯỚC 2: Chạy Backend (.NET API)
 1. Mở Terminal hoặc Command Prompt và di chuyển vào thư mục TaskApi:
@@ -55,8 +55,7 @@ Trước khi chạy, đảm bảo máy tính đã cài đặt:
         } ***Thay MAT_KHAU_CUA_BAN thành mật khẩu MySQL***
 3. Chạy lệnh khởi động Server: dotnet run
 4. Kết quả thành công:
-    1. Sau khi chạy thàng công, sẽ tìm thấy có dòng này xuất hiện trên Terminal hoặc Command Prompts: http://localhost:xxxx
-    ***xxxx là số cổng (port number) mà ứng dụng .NET dùng để lắng nghe request ***
+    1. Sau khi chạy thàng công, sẽ tìm thấy có dòng này xuất hiện trên Terminal hoặc Command Prompts: http://localhost:xxxx ***xxxx là số cổng (port number) mà ứng dụng .NET dùng để lắng nghe request ***
 
 ## BƯỚC 3: Cấu hình biến môi trường:
 1. Mở file .env.local. trong thư mục task-client
@@ -68,9 +67,9 @@ Trước khi chạy, đảm bảo máy tính đã cài đặt:
 1. Mở một Terminal hoặc Command Prompt mới, di chuyển vào thư mục task-client: cd task-client.
 2. Chạy câu lệnh: npm run dev.
 3. Nếu chạy thành công thì trên Terminal hoặc Command Prompt sẽ hiển thị:
-    ➜  Local:   http://localhost:5173/
-    ➜  Network: use --host to expose
-    ➜  press h + enter to show help
+    1. ➜  Local:   http://localhost:5173/
+    2. ➜  Network: use --host to expose
+    3. ➜  press h + enter to show help
 4. Truy cập đường dẫn http://localhost:5173/
 ***(Nếu hệ thống yêu cầu cài đặt thêm thư viện, chạy câu lệnh npm install để cài đặt)***
          
