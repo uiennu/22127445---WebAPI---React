@@ -23,7 +23,7 @@ Trước khi chạy, đảm bảo máy tính đã cài đặt:
 ## BƯỚC 1: Cấu hình Database (MySQL)
 1. Mở MySQL Workbench.
 2. Đăng nhập vào Local instance.
-3. Mở một tab Query mới và chạy đoạn lệnh SQL sau để tạo Database và Bảng:
+3. Mở một tab Query mới và chạy đoạn lệnh SQL sau để tạo Database và Bảng:<br>
 CREATE DATABASE IF NOT EXISTS taskdb;<br>
 USE taskdb;<br>
 CREATE TABLE IF NOT EXISTS Tasks (<br>
@@ -31,17 +31,16 @@ Id INT AUTO_INCREMENT PRIMARY KEY,<br>
 Title VARCHAR(200) CHARACTER SET utf8mb4 NOT NULL,<br>
 Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành<br>
 DueDate DATETIME(6) NOT NULL,<br>
-CreatedAt DATETIME(6) NOT NULL<br>
-);
+CreatedAt DATETIME(6) NOT NULL);<br>
 
-4. Tạo dữ liệu mẫu.
-    - INSERT INTO Tasks (Title, Status, DueDate, CreatedAt)
-    - VALUES
-    - ('Hoàn thiện giao diện trang chủ', 0, '2025-11-25 18:00:00.000000', NOW(6)),
-    - ('Sửa lỗi đăng nhập trên backend', 1, '2025-11-26 12:00:00.000000', NOW(6)),
-    - ('Tối ưu hóa API lấy dữ liệu', 0, '2025-11-30 09:00:00.000000', NOW(6)),
-    - ('Viết tài liệu hướng dẫn người dùng', 0, '2025-12-05 23:59:59.000000', NOW(6)),
-    - ('Kiểm thử lại chức năng upload file', 1, '2025-11-27 17:00:00.000000', NOW(6));
+4. Tạo dữ liệu mẫu<br>
+INSERT INTO Tasks (Title, Status, DueDate, CreatedAt)<br>
+VALUES<br>
+('Hoàn thiện giao diện trang chủ', 0, '2025-11-25 18:00:00.000000', NOW(6)),<br>
+('Sửa lỗi đăng nhập trên backend', 1, '2025-11-26 12:00:00.000000', NOW(6)),<br>
+('Tối ưu hóa API lấy dữ liệu', 0, '2025-11-30 09:00:00.000000', NOW(6)),<br>
+('Viết tài liệu hướng dẫn người dùng', 0, '2025-12-05 23:59:59.000000', NOW(6)),<br>
+('Kiểm thử lại chức năng upload file', 1, '2025-11-27 17:00:00.000000', NOW(6));<br>
 
 ## BƯỚC 2: Chạy Backend (.NET API)
 1. Mở Terminal hoặc Command Prompt và di chuyển vào thư mục TaskApi:
@@ -68,7 +67,7 @@ CreatedAt DATETIME(6) NOT NULL<br>
     1. ➜  Local:   http://localhost:5173/
     2. ➜  Network: use --host to expose
     3. ➜  press h + enter to show help
-4. Truy cập đường dẫn http://localhost:5173/
+4. Truy cập đường dẫn http://localhost:5173/<br>
 ***(Nếu hệ thống yêu cầu cài đặt thêm thư viện, chạy câu lệnh npm install để cài đặt)***
          
 # Cấu trúc thư mục dự án
