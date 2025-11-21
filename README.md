@@ -46,27 +46,28 @@ VALUES<br>
 1. Mở Terminal hoặc Command Prompt và di chuyển vào thư mục TaskApi:
 2. Cấu hình kết nối Database:
     1. Mở file appsettings.json.
-    2. Kiểm tra dòng ConnectionStrings. Đảm bảo mật khẩu (password) khớp với mật khẩu MySQL.
-        "ConnectionStrings": {
-        "Default": "server=localhost;port=3306;database=taskdb;user=root;password=MAT_KHAU_CUA_BAN"
-        } ***Thay MAT_KHAU_CUA_BAN thành mật khẩu MySQL***
+    2. Kiểm tra dòng ConnectionStrings. Đảm bảo mật khẩu (password) khớp với mật khẩu MySQL.<br>
+    &nbsp;"ConnectionStrings": {<br>
+    &nbsp;"Default": "server=localhost;port=3306;database=taskdb;user=root;password=MAT_KHAU_CUA_BAN"} <br>
+    ***Thay MAT_KHAU_CUA_BAN thành mật khẩu MySQL***
 3. Chạy lệnh khởi động Server: dotnet run
 4. Kết quả thành công:
-    1. Sau khi chạy thàng công, sẽ tìm thấy có dòng này xuất hiện trên Terminal hoặc Command Prompts: http://localhost:xxxx. (xxxx là số cổng (port number) mà ứng dụng .NET dùng để lắng nghe request)
+    1. Sau khi chạy thàng công, sẽ tìm thấy có dòng này xuất hiện trên Terminal hoặc Command Prompts: http://localhost:xxxx.<br>
+    *** (xxxx là số cổng (port number) mà ứng dụng .NET dùng để lắng nghe request) ***
 
 ## BƯỚC 3: Cấu hình biến môi trường:
 1. Mở file .env.local. trong thư mục task-client
 2. Paste dòng này vào file:
-    VITE_API_BASE_URL=http://localhost:xxxx/api
+    VITE_API_BASE_URL=http://localhost:xxxx/api<br>
     ***(Dòng http://localhost:xxxx chính là dòng được hiển thị trên Terminal hoặc Command Prompt ở bước 2)***
 
 ## BƯỚC 4: Chạy Frontend (React App)
 1. Mở một Terminal hoặc Command Prompt mới, di chuyển vào thư mục task-client: cd task-client.
 2. Chạy câu lệnh: npm run dev.
-3. Nếu chạy thành công thì trên Terminal hoặc Command Prompt sẽ hiển thị:
-    1. ➜  Local:   http://localhost:5173/
-    2. ➜  Network: use --host to expose
-    3. ➜  press h + enter to show help
+3. Nếu chạy thành công thì trên Terminal hoặc Command Prompt sẽ hiển thị:<br>
+&nbsp; ➜  Local:   http://localhost:5173/<br>
+&nbsp;➜  Network: use --host to expose<br>
+&nbsp;➜  press h + enter to show help<br>
 4. Truy cập đường dẫn http://localhost:5173/<br>
 ***(Nếu hệ thống yêu cầu cài đặt thêm thư viện, chạy câu lệnh npm install để cài đặt)***
          
