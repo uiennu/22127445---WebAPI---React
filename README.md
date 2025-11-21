@@ -16,8 +16,8 @@ Trước khi chạy, đảm bảo máy tính đã cài đặt:
 1. .NET SDK 8.0 trở lên.
 2. Node.js (phiên bản LTS mới nhất).
 3. MySQL Server và MySQL Workbench.
-4. Visual Studio Code
-5. C# Dev Kit (Cài trong Visual Studio Code)
+4. Visual Studio Code.
+5. C# Dev Kit (Cài trong Visual Studio Code).
 
 # Hướng dẫn cài đặt & Chạy
 ## BƯỚC 1: Cấu hình Database (MySQL)
@@ -33,7 +33,7 @@ Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành<br>
 DueDate DATETIME(6) NOT NULL,<br>
 CreatedAt DATETIME(6) NOT NULL);<br>
 
-4. Tạo dữ liệu mẫu<br>
+4. Tạo dữ liệu mẫu.<br>
 INSERT INTO Tasks (Title, Status, DueDate, CreatedAt)<br>
 VALUES<br>
 ('Hoàn thiện giao diện trang chủ', 0, '2025-11-25 18:00:00.000000', NOW(6)),<br>
@@ -56,7 +56,7 @@ VALUES<br>
     ***(xxxx là số cổng (port number) mà ứng dụng .NET dùng để lắng nghe request)***
 
 ## BƯỚC 3: Cấu hình biến môi trường:
-1. Mở file .env.local. trong thư mục task-client
+1. Mở file .env.local. trong thư mục task-client.
 2. Paste dòng này vào file:
     VITE_API_BASE_URL=http://localhost:xxxx/api<br>
     ***(Dòng http://localhost:xxxx chính là dòng được hiển thị trên Terminal hoặc Command Prompt ở bước 2)***
@@ -65,7 +65,7 @@ VALUES<br>
 1. Mở một Terminal hoặc Command Prompt mới, di chuyển vào thư mục task-client: cd task-client.
 2. Chạy câu lệnh: npm run dev.
 3. Nếu chạy thành công thì trên Terminal hoặc Command Prompt sẽ hiển thị:<br>
-&nbsp; ➜  Local:   http://localhost:5173/<br>
+&nbsp;➜  Local:   http://localhost:5173/<br>
 &nbsp;➜  Network: use --host to expose<br>
 &nbsp;➜  press h + enter to show help<br>
 4. Truy cập đường dẫn http://localhost:5173/<br>
@@ -96,9 +96,9 @@ VALUES<br>
     └── README.md                 # Hướng dẫn sử dụng
 
 # Lưu ý
-- Trong task-client/.env.local, nội dung đang là: **VITE_API_BASE_URL=http://localhost:5062/api**
-- Cần thay đổi 5062 thành port trên máy bạn
-- File README.md trong task-client là file README do hệ thống tự tạo 
-- File README.md nằm cùng cấp với 2 thư mục task-client và TaskApi mới là file README hướng dẫn cách chạy 
+- Trong task-client/.env.local, nội dung đang là: **VITE_API_BASE_URL=http://localhost:5062/api**.
+- Cần thay đổi 5062 thành port trên máy bạn.
+- File README.md trong task-client là file README do hệ thống tự tạo.
+- File README.md nằm cùng cấp với 2 thư mục task-client và TaskApi mới là file README hướng dẫn cách chạy.
 
 
