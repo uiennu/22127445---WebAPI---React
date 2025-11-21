@@ -26,12 +26,13 @@ Trước khi chạy, đảm bảo máy tính đã cài đặt:
 3. Mở một tab Query mới và chạy đoạn lệnh SQL sau để tạo Database và Bảng:<br>
 CREATE DATABASE IF NOT EXISTS taskdb;<br>
 USE taskdb;<br>
-CREATE TABLE IF NOT EXISTS Tasks (<br>
-&nbsp;Id INT AUTO_INCREMENT PRIMARY KEY,<br>
-&nbsp;Title VARCHAR(200) CHARACTER SET utf8mb4 NOT NULL,<br>
-&nbsp;Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành<br>
-&nbsp;DueDate DATETIME(6) NOT NULL,<br>
-&nbsp;CreatedAt DATETIME(6) NOT NULL<br>
+CREATE TABLE IF NOT EXISTS Tasks<br>
+(<br>
+&nbsp;&nbsp;Id INT AUTO_INCREMENT PRIMARY KEY,<br>
+&nbsp;&nbsp;Title VARCHAR(200) CHARACTER SET utf8mb4 NOT NULL,<br>
+&nbsp;&nbsp;Status INT NOT NULL DEFAULT 0, -- 0: Đang làm, 1: Hoàn thành<br>
+&nbsp;&nbsp;DueDate DATETIME(6) NOT NULL,<br>
+&nbsp;&nbsp;CreatedAt DATETIME(6) NOT NULL<br>
 );
 
 4. Tạo dữ liệu mẫu.<br>
