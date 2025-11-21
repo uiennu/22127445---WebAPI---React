@@ -18,7 +18,3 @@ VALUES
 ('Tối ưu hóa API lấy dữ liệu', 0, '2025-11-30 09:00:00.000000', NOW(6)),
 ('Viết tài liệu hướng dẫn người dùng', 0, '2025-12-05 23:59:59.000000', NOW(6)),
 ('Kiểm thử lại chức năng upload file', 1, '2025-11-27 17:00:00.000000', NOW(6));
-
-SET SQL_SAFE_UPDATES = 0;
-DELETE FROM Tasks;
-Select*from Tasks
