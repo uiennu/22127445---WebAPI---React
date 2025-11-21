@@ -1,9 +1,9 @@
 📌 ỨNG DỤNG QUẢN LÝ TASK CÁ NHÂN (Personal Task Manager)
 
-Sinh viên thực hiện: Nguyễn Lâm Nhã Uyên
-Mã số sinh viên: 22127445
+- Sinh viên thực hiện: Nguyễn Lâm Nhã Uyên
+- Mã số sinh viên: 22127445
 
-Ứng dụng quản lý công việc cá nhân, cho phép thêm, sửa, xóa và lọc công việc theo trạng thái.
+- Ứng dụng quản lý công việc cá nhân, cho phép thêm, sửa, xóa và lọc công việc theo trạng thái.
 
 # Công nghệ sử dụng
 1. Backend: ASP.NET Core Web API (.NET 8).
