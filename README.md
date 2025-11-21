@@ -55,7 +55,7 @@ Trước khi chạy, đảm bảo máy tính đã cài đặt:
         } ***Thay MAT_KHAU_CUA_BAN thành mật khẩu MySQL***
 3. Chạy lệnh khởi động Server: dotnet run
 4. Kết quả thành công:
-    1. Sau khi chạy thàng công, sẽ tìm thấy có dòng này xuất hiện trên Terminal hoặc Command Prompts: http://localhost:xxxx. (*** xxxx là số cổng (port number) mà ứng dụng .NET dùng để lắng nghe request ***)
+    1. Sau khi chạy thàng công, sẽ tìm thấy có dòng này xuất hiện trên Terminal hoặc Command Prompts: http://localhost:xxxx. (xxxx là số cổng (port number) mà ứng dụng .NET dùng để lắng nghe request)
 
 ## BƯỚC 3: Cấu hình biến môi trường:
 1. Mở file .env.local. trong thư mục task-client
